@@ -235,6 +235,7 @@ button:focus {
         border: 1px solid #161616;
         color: #161616;
         position: relative;
+        margin: 0 auto;
         &:hover {
             background-color: $dark;
             color: #ffffff;
@@ -258,6 +259,7 @@ button:focus {
     &--buy {
         margin: 0 auto;
         border: none;
+        width: 600px;
         cursor: pointer;
     }
 }
@@ -318,6 +320,12 @@ button:focus {
         position: absolute;
         right: -90px;
         bottom: 0px;
+        &--d {
+            display: block;
+        }
+        &--m {
+            display: none;
+        }
         img {
             display: block;
             width: 100%;
@@ -864,6 +872,12 @@ button:focus {
             z-index: -2;
             width: 550px;
             right: -150px;
+            &--d {
+                display: none;
+            }
+            &--m {
+                display: block;
+            }
         }
     }
     .program {
@@ -879,6 +893,11 @@ button:focus {
             &--item {
                 width: 90%;
             }
+        }
+    }
+    .button {
+        &--buy {
+            width: 90%;
         }
     }
     .buy {
@@ -941,6 +960,9 @@ button:focus {
             width: 360px;
             padding: 20px 0 10px 0;
         }
+        &--for {
+            text-align: left;
+        }
         &--autor {
             width: auto;
             margin-bottom: 35px;
@@ -957,7 +979,12 @@ button:focus {
             line-height: 22px;
         }
         &--program {
-            text-align: center;
+            text-align: left;
+            padding: 0 0 0 5%;
+            margin-bottom: 0;
+        }
+        &--results {
+            text-align: left;
         }
     }
     .subtitle {
@@ -977,6 +1004,8 @@ button:focus {
         }
         &--results {
             margin-top: 0;
+            text-align: left;
+            padding: 20px 0 0 0;
         }
         &--buy {
             font-size: 21px;
@@ -1101,7 +1130,7 @@ button:focus {
         height: 55px;
         font-size: 18px;
         padding: 18px 53px;
-        border: 1px #ffffff solid;
+        //border: 1px #ffffff solid;
         &--intro {
             margin-top: 25px;
         }
@@ -1132,8 +1161,9 @@ button:focus {
     }
     .program {
         &__item {
+            margin: 0 auto;
             padding: 50px 0;
-            &::before {
+            &::after{
                 content: '';
                 background-image: url('../img/program/program-item-l.svg');
                 background-repeat: no-repeat;
@@ -1142,19 +1172,21 @@ button:focus {
                 width: 60px;
                 height: 65px;
                 top: 20px;
-                left: 20px;
+                right: 20px;
+                transform: scale(-1, 1);
             }
-            &::after {
+            &::before {
                 content: '';
-                background-image: url('../img/program/program-item-r.svg');
+                background-image: url('../img/program/program-item-m-l.svg');
                 background-repeat: no-repeat;
                 background-size: 100%;
                 display: block;
                 width: 60px;
                 height: 65px;
-                bottom: 20px;
-                right: 20px;
+                top: 90%;
+                left: 20px;
             }
+            
         }
     }
     .autor {
@@ -1183,6 +1215,11 @@ button:focus {
             width: 390px;
         }
     }
+    .program {
+        &__inner {
+            padding: 40px 2px;
+        }
+    }
 }
 @media (max-width: 430px) {
     .intro {
@@ -1194,6 +1231,11 @@ button:focus {
     .subtitle {
         &--time {
             width: 40%;
+        }
+    }
+    .intro {
+        &__inner {
+            padding: 20px 0 75px 0;
         }
     }
 }
@@ -1217,11 +1259,8 @@ button:focus {
         }
     }
     .program {
-        &__inner {
-            padding: 40px 0;
-        }
         &__item {
-            padding: 70px 0;
+            padding: 70px 0 90px 0;
         }
     }
     .results {
@@ -1261,8 +1300,7 @@ button:focus {
 @media (max-width: 390px) {
     .intro {
         &__img {
-            width: 330px;
-            right: -100px;
+            right: -120px;
         }
         &__inner {
             padding: 20px 0 60px 0;
@@ -1295,6 +1333,13 @@ button:focus {
             }
         }
     }
+    .program {
+        &__item {
+            &::before {
+                top: 92%;
+            }
+        }
+    }
     .list {
         &__program {
             margin-top: 25px;
@@ -1308,16 +1353,9 @@ button:focus {
             line-height: 33px;
         }
     }
-    .program {
-        &__item {
-            &::before {
-                top: 10px;
-                left: 10px;
-            }
-            &::after {
-                bottom: 10px;
-                right: 10px;
-            }
+    .intro {
+        &__img {
+            width: 350px;
         }
     }
 }
