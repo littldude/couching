@@ -53,31 +53,6 @@ button:focus {
     max-width: 1180px;
     width: 100%;
 }
-// .open {
-//     display: none;
-//     align-items: center;
-//     justify-content: center;
-//     background-color: #ffffff;
-//     border-radius: 100%;
-//     width: 30px;
-//     height: 30px;
-//     border: none;
-//     cursor: pointer;
-//     &--rotate {
-//         transform: rotate(45deg) ; 
-//     }
-// }
-// .svg {
-//     display: none;
-//     &--plus {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         width: 20px;
-//         height: 20px;
-//     }
-    
-// }
 .offer {
     color: #8D5A3E;
     text-decoration: underline;
@@ -110,9 +85,6 @@ button:focus {
     font-size: 45px;
     line-height: 60px;
     text-transform: uppercase;
-    // &--dark {
-    //     color: $dark;
-    // }
     &--intro {
         padding: 27px 0 22px 0;
         width: 700px;
@@ -136,31 +108,24 @@ button:focus {
             right: -19px;
         }
     }
-    // &--left {
-    //     text-align: left;
-    // }
-    // &--autor {
-    //     margin-bottom: 45px;
-    //     width: 490px;
-    // }
-    // &--blue {
-    //     color: #9F5D3A;
-    // }
-    // &--price {
-    //     font-size: 50px;
-    //     line-height: 24px;
-    //     margin-top: 20px;
-    //     text-align: center;
-    // }
-    // &--results {
-    //     width: 776px;
-    //     display: block;
-    //     margin: 0 auto 60px auto;
-    //     line-height: 70px;
-    // }
-    // &--program {
-    //     margin-left: 113px;
-    // }
+    &--autor {
+        margin-bottom: 35px;
+        position: relative;
+        color: #252B31;
+        &::before {
+            content: '';
+            display: flex;
+            flex: 0 0 auto;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url('../img/for/title-item.svg');
+            width: 27px;
+            height: 51px;
+            position: absolute;
+            top: 10px;
+            left: -40px;
+        }
+    }
 }
 .subtitle {
     font-style: normal;
@@ -168,7 +133,6 @@ button:focus {
     font-size: 26px;
     line-height: 44px;
     &--intro {
-        //padding: 0 0 45px 0;
         width: 480px;
     }
     &--time {
@@ -186,25 +150,13 @@ button:focus {
         margin: 0 auto;
         margin-top: 20px;
     }
-    // &--buy {
-    //     font-size: 24px;
-    //     line-height: 24px;
-    //     text-align: center;
-    // }
-    // &--program {
-    //     margin: 0 0 18px 38px;
-    // }
-    // &--overline {
-    //     text-decoration: line-through;
-    //     text-decoration-color: #252B31;
-    // }
 }
 .text {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
-    //color: $dark;
+    color: #252B31;
     &--decoration {
         padding: 0 0 24px 0;
         width: 510px;
@@ -229,109 +181,15 @@ button:focus {
     &--white {
         color: #ffffff;
     }
-    // &--autor {
-    //     margin-bottom: 35px;
-    //     &:last-child {
-    //         margin-bottom: 0;
-    //     }
-    // }
-    // &--bg {
-    //     background-color: #ffffff;
-    //     padding: 1px 9px;
-    //     border-radius: 45px;
-    // }
-    // &--grey {
-    //     color:#DBDBDB;
-    //     text-decoration: line-through;
-    // }
-    // &--red {
-    //     background-color: $red;
-    //     padding: 3px 5px;
-    //     border-radius: 10px;
-    // }
-    // &--time {
-    //     font-size: 14px;
-    // }
-    // &--currency {
-    //     font-size: 16px;
-    // }
-    // &--small {
-    //     font-size: 20px;
-    //     line-height: 26px;
-    //     font-family: 'Muller';
-    //     text-transform: uppercase;
-    //     font-weight: 700;
-    //     font-style: italic;
-    //     margin-top: 10px;
-    // }
+    &--autor {
+        margin-bottom: 35px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     &--program {
         margin-bottom: 30px;
     }
-    // &--course {
-    //     margin-bottom: 40px;
-    //     display: flex;
-    //     align-items: center;
-    //     &:last-child {
-    //         margin-bottom: 0;
-    //     }
-    //     &::before {
-    //         content: '';
-    //         background-size: 100%;
-    //         background-repeat: no-repeat;
-    //         display: flex;
-    //         flex: 0 0 auto;
-    //         margin-right: 30px;
-    //     }
-    //     &:nth-of-type(1) {
-    //         &::before {
-    //             background-image: url('../img/course/item1.svg');
-    //             width: 42px;
-    //             height: 50px;
-    //         }
-    //     }
-    //     &:nth-of-type(2) {
-    //         &::before {
-    //             background-image: url('../img/course/item2.svg');
-    //             width: 41px;
-    //             height: 39px;
-    //         }
-    //     }
-    //     &:nth-of-type(3) {
-    //         &::before {
-    //             background-image: url('../img/course/item3.svg');
-    //             width: 41px;
-    //             height: 39px;
-    //         }
-    //     }
-    //     &:nth-of-type(4) {
-    //         &::before {
-    //             background-image: url('../img/course/item4.svg');
-    //             width: 41px;
-    //         height: 45px;
-    //         }
-    //     }
-    //     &:nth-of-type(5) {
-    //         &::before {
-    //             background-image: url('../img/course/item5.svg');
-    //             width: 41px;
-    //             height: 38px;
-    //         }
-    //     }
-    //     &:nth-of-type(6) {
-    //         &::before {
-    //             background-image: url('../img/course/item6.svg');
-    //             width: 42px;
-    //             height: 41px;
-    //         }
-    //     }
-    //     &:nth-of-type(7) {
-    //         &::before {
-    //             background-image: url('../img/course/item7.svg');
-    //             width: 41px;
-    //             height: 38px;
-    //         }
-    //     }
-    // }
 }
 .underline {
     position: relative;
@@ -399,6 +257,8 @@ button:focus {
     }
     &--buy {
         margin: 0 auto;
+        border: none;
+        cursor: pointer;
     }
 }
 .list {
@@ -435,19 +295,9 @@ button:focus {
             }
         }
     }
-    // &__program {
-    //     margin-top: 35px;
-    // }
     &__for {
         width: 515px;
     }
-    // &__results {
-    //     width: 580px;
-    // }
-    // &__buy {
-    //     margin-top: auto;
-    //     padding: 38px 30px 40px 30px;
-    // }
 }
 .intro {
     overflow: hidden;
@@ -479,7 +329,6 @@ button:focus {
     background-color: $dark;
     position: relative;
     overflow: hidden;
-    // z-index: 10;
     &::after {
         content: url('../img/for/for-item.svg');
         display: block;
@@ -489,12 +338,7 @@ button:focus {
     }
     &__inner {
         padding: 0 45px 0 45px;
-        //width: 95%;
         margin: 0 auto;
-        //background-color: #ffffff;
-        //border-radius: 60px;
-       // border: 1px $dark solid;
-       // position: relative;
     }
     &__block {
         display: flex;
@@ -532,35 +376,6 @@ button:focus {
 .program {
     padding: 49px 0 50px 0;
     background-color: $dark;
-    // position: relative;
-    // overflow: hidden;
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     display: block;
-    //     background-image: url('../img/program-img.svg');
-    //     background-repeat: no-repeat;
-    //     background-size: 100%;
-    //     width: 223px;
-    //     height: 223px;
-    //     top: 50%;
-    //     right: -75px;
-    // }
-    // &__inner {
-    //     &--pc {
-    //         display: block;
-    //     }
-    //     &--m {
-    //         display: none;
-    //     }
-    // }
-    // &__item {
-    //     width: 782px;
-    //     padding: 35px 50px;
-    //     background-color: #ffffff;
-    //     border: 1px solid #AB7051;
-    //     border-radius: 25px;
-    // }
     &__item {
         position: relative;
         background-color: #ffffff;
@@ -581,15 +396,16 @@ button:focus {
         }
     }
     &__inner {
-        padding: 60px 100px 60px 200px;
+        padding: 60px 100px 60px 180px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         &--item {
             width: 32%;
             margin-bottom: 60px;
+            margin-right: 10px;
             &:last-child {
                 margin-bottom: 0;
+                margin-right: 0;
             }
         }
     }
@@ -600,7 +416,6 @@ button:focus {
     &__inner {
         margin-top: 30px;
         display: flex;
-        align-items: center;
         justify-content: space-between;
         &--item {
             width: 48%;
@@ -611,106 +426,77 @@ button:focus {
         }
     }
 }
-.big {
-    width: 280px;
-    img {
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
-}
 .autor {
-    background: #EEE6DC;
-    padding: 60px 0 70px 0;
+    background: $dark;
+    padding: 112px 0 65px 0;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    &::after {
-        content: url('../img/autor/circles.svg');
-        position: absolute;
-        right: 0;
-        bottom: 130px;
-        z-index: -1;
+    &__block {
+        position: relative;
+        width: 580px;
+        background-color: #ffffff;
+        padding: 50px 51px 56px 80px;
+        box-shadow: 20px 20px 30px #16294F;
+        border-radius: 10px;
+        margin-left: auto;
+        &::after {
+            content: url('../img/for/for-item.svg');
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -150px;
+        }
     }
     &__inner {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        width: 460px;
-        margin-right: auto;
-        margin-left: 110px;
+        flex-direction: row;
     }
     &__img {
         display: block;
         width: 808px;
         position: absolute;
-        right: 10%;
+        left: 0;
         bottom: 0;
+        z-index: -1;
     }
 }
 .buy {
-    padding: 90px 0 42px 0;
-    background-color: #ffffff;
-    &__inner {
-        padding: 93px 0 60px 0;
-        display: flex;
-        justify-content: space-between;
-        &--item {
-            display: flex;
-            flex-direction: column;
-            width: 32.5%;
-            background-color: #ffffff;
-            border-radius: 25px;
-            border: 1px solid #252B31;
-            &__header {
-                border-radius: 25px 25px 0 0;
-                padding: 15px 0;
-                width: 100%;
-            }
-            &__bottom {
-                margin-top: auto;
-                padding: 0 45px 56px 45px;
-            }
-        }
-        &--currency {
-            font-family: 'Muller';
-            margin-top: 24px;
-            margin-bottom: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            p {
-                margin: 0;
-                &::after {
-                    content: "/";
-                    padding: 0 5px;
-                }
-                &:last-child {
-                    &::after {
-                        display: none;
-                    }
-                }
-            }
-        }
+    padding: 110px 0 50px 0;
+    position: relative;
+    z-index: 1;
+    &__form {
+        display: block;
+        margin: 30px auto 0 auto;
     }
-    &__subtitle {
-        margin-top: 35px;
-        text-align: center;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 28px;
+    &__input {
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 600px;
+        height: 80px;
+        border-radius: 20px;
+        border: 1px $dark solid;
+        padding: 28px 30px;
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+        outline: none;
     }
     &__small {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        text-align: center;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        text-align: center;
+        small {
+            letter-spacing: 0.03em;
+            color: #252B31;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
     }
 }
 .footer {
-    background-color: #ffffff;
+    background-color: $dark;
     padding: 80px 0;
     &__inner {
         margin-top: 70px;
@@ -722,7 +508,7 @@ button:focus {
             font-size: 24px;
             line-height: 29px;
             text-align: center;
-            color: $dark;
+            color: #ffffff;
         }
         &--email {
             font-weight: normal;
@@ -730,9 +516,9 @@ button:focus {
             line-height: 29px;
             text-align: center;
             text-decoration: underline;
-            color: $dark;
+            color: #ffffff;
             &:hover {
-                color: #8ABBF8;
+                color: $red;
                 transition: .2s linear;
             }
         }
@@ -746,7 +532,7 @@ button:focus {
             display: block;
             width: 65px;
             height: 65px;
-            fill: #AB7051;
+            fill: $red;
             &:hover {
                 &:hover {
                     fill: #8D5A3E;
@@ -764,7 +550,12 @@ button:focus {
 @media (max-width: 1440px) {
     .autor {
         &__img {
-            right: 10px;
+            left: -80px;
+        }
+    }
+    .for {
+        &::after {
+            right: -90px;
         }
     }
 }
@@ -772,51 +563,52 @@ button:focus {
     .container {
         padding: 0 1%;
     }
-    .course {
+    .header {
+        padding: 40px 0 20px 0;
+    }
+    .intro {
         &__img {
-            right: -65%;
+            width: 55%;
         }
     }
     .for {
+        &__img {
+            height: auto;
+            width: 40%;
+        }
         &__inner {
-            padding: 65px 70px 65px 40px;
+            padding: 0 20px;
         }
     }
     .program {
-        &::after {
-            top: 40%;
+        &__inner {
+            padding: 60px 100px 60px 150px;
         }
     }
     .autor {
         &__img {
-            right: -20%;
+            left: -190px;
+        }
+        &__block {
+            &::after {
+                display: none;
+            }
         }
     }
 }
 @media (max-width: 1112px) {
     .intro {
         &__img {
-            width: 600px;
+            width: 620px;
+            right: -120px;
         }
     }
-    .list {
-        &__buy {
-            padding: 38px 20px 50px 20px;
-        }
-    }
-    .buy {
+    .program {
         &__inner {
-            &--item {
-                &__bottom {
-                    padding: 0 20px 56px 20px;
-                }
-            }
+            padding: 50px 70px 50px 100px;
         }
-    }
-    .course {
-        &__img {
-            right: -51%;
-            width: 70%;
+        &__item {
+            padding: 80px 0;
         }
     }
 }
@@ -825,39 +617,43 @@ button:focus {
         &--program {
             margin-left: 151px;
         }
+        &--for {
+            text-align: center;
+            &::after {
+                display: none;
+            }
+        }
     }
     .intro {
         &__img {
             width: 570px;
         }
     }
-    .list {
-        &__for {
-            width: 420px;
-        }
-    }
-    .bonus {
+    .for {
         &__inner {
-            flex-direction: column;
+            padding: 0;
+        }
+        &__block {
+            flex-direction: column-reverse;
+            justify-content: center;
             align-items: center;
-            &--item {
-                width: 70%;
-                margin-bottom: 40px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
         }
-    }
-    .program {
-        &::after {
-            display: none;
-        }
-        &__item {
+        &__img {
+            margin-top: 60px;
             width: 70%;
         }
-        &__links {
-            margin: 73px 0 60px 151px;
+    }
+    .list {
+        &__for {
+            width: 80%;
+        }
+    }
+}
+@media (max-width: 1020px) {
+    .intro {
+        &__img {
+            width: 600px;
+            right: -190px;
         }
     }
 }
@@ -885,18 +681,17 @@ button:focus {
         }
     }
     .subtitle {
+        line-height: 36px;
         &--intro {
             order: 1;
-            padding: 0 0 30px 0;
         }
         &--how {
-            margin-top: 30px;
             width: 55%;
             order: 3;
         }
         &--time {
             order: 5;
-            width: 45%;
+            width: 40%;
             margin-left: 0;
         }
         &--results {
@@ -915,31 +710,32 @@ button:focus {
             margin-top: 30px;
         }
     }
+    .header {
+        padding: 30px 0;
+    }
     .intro {
         &__inner {
-            padding: 60px 0 100px 0;
+            padding: 0 0 100px 0;
+        }
+        &__img {
+            width: 600px;
         }
         &__block {
             order: 4;
             flex-direction: column-reverse;
-            margin-top: 30px;
+            margin-top: 20px;
             align-items: flex-start;
         }
     }
     .for {
+        padding: 80px 0 50px 0;
         &__block {
             margin-top: 40px;
             flex-direction: column-reverse;
             align-items: center;
         }
         &__img {
-            margin-top: 30px;
-            height: 500px;
-            img {
-                width: 100%;
-                height: 100%;
-                display: block;
-            }
+            width: 60%;
         }
     }
     .list {
@@ -947,99 +743,30 @@ button:focus {
             width: 80%;
         }
     }
-    .open {
-        display: flex;
-        flex: 0 0 auto;
-    }
-    .svg {
-        display: block;
-    }
     .program {
-        padding: 60px 0 0 0;
-        &__links {
-            display: none;
-        }
+        padding: 60px 0;
         &__inner {
-            &--pc {
-                display: none;
-            }
-            &--m {
-                display: block;
-                margin-bottom: 60px;
-                &:last-of-type {
-                    margin-bottom: 0;
-                }
-            }
-        }
-        &__item {
-            &--m {
-                display: block;
-                margin: 0 auto 5px auto; 
-                width: 70%;
-                background: #AB7051;
-                padding: 13px 19px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-            &--header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            &--body {
-                display: none;
-            }
-        }
-        &__title {
-            margin: 0 auto 20px auto;
-            display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            &--item {
+                width: 45%;
+                margin-right: 0;
+            }
         }
     }
     .autor {
         padding: 60px 0 0 0;
-        &::after {
-            display: none;
-        }
         &__inner {
-            width: 90%;
             flex-direction: column-reverse;
-            margin-left: auto;
+            align-items: center;
+        }
+        &__block {
+            width: 90%;
+            margin-left: 0;
         }
         &__img {
             margin-top: 40px;
             width: 700px;
-            position: static;
-        }
-    }
-    .buy {
-        &__inner {
-            flex-direction: column;
-            align-items: center;
-            &--item {
-                margin-bottom: 40px;
-                width: 80%;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-                &__header {
-                    background-size: cover;
-                }
-            }
-        }
-    }
-    .course {
-        &__inner {
-            flex-direction: column;
-            align-items: center;
-            &--item {
-                padding: 63px 53px 10px 40px;
-            }
-        }
-        &__img {
-            margin: 30px auto 0 auto;
             position: static;
         }
     }
@@ -1055,20 +782,17 @@ button:focus {
             width: auto;
         }
     }
-    .about {
-        &__inner {
-            &--item {
-                width: 30%;
-            }
-        }
-    }
     .results {
         &__inner {
             flex-direction: column;
-        }
-        &__img {
-            margin-top: 50px;
-            width: 50%;
+            align-items: center;
+            &--item {
+                width: 80%;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
     .footer {
@@ -1082,16 +806,19 @@ button:focus {
     }
 }
 @media (max-width: 768px) {
-    .course {
-        padding: 60px 0;
-        &__inner {
-            &--item {
-                width: 95%;
-                padding: 50px 50px 10px 30px;
-            }
-        }
+    .intro {
         &__img {
-            width: 60%;
+            width: 570px;
+        }
+    }
+    .program {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 100px;
+            &--item {
+                width: 90%;
+            }
         }
     }
     .autor {
@@ -1117,9 +844,9 @@ button:focus {
             padding: 20px 0;
             line-height: 65px;
         }
-        &--results {
-            margin: 0 auto 40px auto;
-        }
+    }
+    .text--program {
+        margin-bottom: 20px;
     }
     .subtitle {
         &--intro {
@@ -1133,19 +860,31 @@ button:focus {
         }
     }
     .intro {
-        &__inner {
-            padding: 40px 0 70px 0;
-        }
         &__img {
             z-index: -2;
-            width: 500px;
+            width: 550px;
+            right: -150px;
         }
     }
-    .about {
-        &__block {
+    .program {
+        &__inner {
+            padding: 50px 0;
             &--item {
-                height: 100px;
+                margin-bottom: 40px;
             }
+        }
+    }
+    .results {
+        &__inner {
+            &--item {
+                width: 90%;
+            }
+        }
+    }
+    .buy {
+        padding: 60px 0;
+        &__input {
+            width: 90%;
         }
     }
     .footer {
@@ -1183,11 +922,6 @@ button:focus {
             }
         }
     }
-    .results {
-        &__inner {
-            margin-top: 0;
-        }
-    }
 }
 @media (max-width: 568px) {
     .container {
@@ -1201,15 +935,22 @@ button:focus {
         }
     }
     .title {
-        font-size: 34px;
+        font-size: 32px;
         line-height: 40px;
         &--intro {
             width: 360px;
             padding: 20px 0 10px 0;
         }
         &--autor {
-            width: 240px;
+            width: auto;
             margin-bottom: 35px;
+            &::before {
+                width: 20px;
+                height: 44px;
+                position: absolute;
+                top: 10px;
+                left: -25px;
+            }
         }
         &--buy {
             font-size: 18px;
@@ -1225,24 +966,14 @@ button:focus {
         &--intro {
             font-size: 18px;
             line-height: 22px;
-            width: 235px;
+            width: 261px;
         }
         &--how {
             font-size: 14px;
             line-height: 18px;
-            &__d {
-                display: none;
-            }
-            &__m {
-                display: block;
-                width: 60%;
-            }
-            &::before {
-               display: none;
-            }
         }
         &--time {
-            width: 145px;
+            width: 200px;
         }
         &--results {
             margin-top: 0;
@@ -1319,9 +1050,15 @@ button:focus {
         position: relative;
         &--intro {
             &::before {
+                content: '';
                 position: absolute;
-                content: url('../img/intro/mob/intro-item-m.svg');
-                top: 20px;
+                display: block;
+                width: 190px;
+                height: 45px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-image: url('../img/intro/bg-item.svg');
+                top: -5px;
                 right: -13px;
                 z-index: -1;
             }
@@ -1356,95 +1093,88 @@ button:focus {
             width: 420px;
         }
         &__inner {
-            padding: 20px 0 80px 0;
-        }
-    }
-    .about {
-        top: -30px;
-        &__inner {
-            flex-wrap: wrap;
-            justify-content: space-between;
-            &--item {
-                padding: 20px;
-                height: auto;
-                &::before {
-                    display: none;
-                }
-                &:nth-child(1) {
-                    width: 48%;
-                    margin-bottom: 15px;
-                }
-                &:nth-child(2) {
-                    width: 48%;
-                    margin-bottom: 15px;
-                }
-                &:nth-child(3) {
-                    width: 100%;
-                }
-            }
+            padding: 20px 0 100px 0;
         }
     }
     .button {
         width: 217px;
         height: 55px;
-        border-radius: 90px;
         font-size: 18px;
         padding: 18px 53px;
+        border: 1px #ffffff solid;
         &--intro {
             margin-top: 25px;
         }
+        &--brown {
+            &::before {
+                display: none;
+            }
+        }
+        &--buy {
+            width: 90%;
+        }
     }
     .for {
-        padding: 250px 0 80px 0;
-        &__block {
-            margin-top: 30px;
+        padding: 60px 0 50px 0;
+        &::after {
+            display: none;
         }
-        &__img {
-            height: 350px;
+        &__block {
+            margin-top: 0;
         }
         &__inner {
-            padding: 50px 20px 35px 20px;
+            padding: 0;
             &::before {
                 top: -10px;
                 right: -10px;
             }
         }
     }
+    .program {
+        &__item {
+            padding: 50px 0;
+            &::before {
+                content: '';
+                background-image: url('../img/program/program-item-l.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: block;
+                width: 60px;
+                height: 65px;
+                top: 20px;
+                left: 20px;
+            }
+            &::after {
+                content: '';
+                background-image: url('../img/program/program-item-r.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: block;
+                width: 60px;
+                height: 65px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    }
     .autor {
+        padding: 30px 0 0 0;
+        &__block {
+            padding: 40px 30px;
+        }
         &__img {
             width: 80%;
         }
     }
     .buy {
-        &__inner {
-            padding: 50px 0;
-            &--item {
-                width: 90%;
-            }
+        &__input {
+            height: 55px;
+            font-size: 17px;
+            margin: 0 auto 15px auto;
         }
     }
     .footer {
         padding: 60px 0;
-    }
-    .bonus {
-        padding: 60px 0;
-        &__inner {
-            &--item {
-                width: 90%;
-            }
-        }
-    }
-    .course {
-        &__img {
-            width: 70%;
-        }
-    }
-    .program {
-        &__item {
-            &--m {
-                width: 90%;
-            }
-        }
     }
 }
 @media (max-width: 500px) {
@@ -1461,8 +1191,19 @@ button:focus {
             width: 385px;
         }
     }
+    .subtitle {
+        &--time {
+            width: 40%;
+        }
+    }
 }
 @media (max-width: 414px) {
+    .title {
+        &--autor {
+            font-size: 27px;
+            line-height: 32px;
+        }
+    }
     .subtitle {
         &--program {
             padding: 8px;
@@ -1475,31 +1216,32 @@ button:focus {
             line-height: 16px;
         }
     }
-    .about {
+    .program {
         &__inner {
-            &--item {
-                padding: 10px;
-                &:nth-child(1),
-                &:nth-child(2) {
-                    margin-bottom: 10px;
-                }
-            }
+            padding: 40px 0;
         }
-    }
-    .for {
-        padding: 200px 0 40px 0;
-    }
-    .autor {
-        &__img {
-            width: 95%;
+        &__item {
+            padding: 70px 0;
         }
     }
     .results {
-        &__img {
-            margin-top: 50px;
-            width: 69%;
+        &__inner {
+            &--item {
+                width: 100%;
+                padding: 48px 10px 48px 32px;
+            }
         }
-    }   
+    }
+    .autor {
+        padding: 0;
+        &__block {
+            width: 100%;
+            padding: 40px 25px;
+        }
+        &__img {
+            width: 95%;
+        }
+    } 
     .footer {
         padding-bottom: 50px;
         &__inner {
@@ -1519,57 +1261,37 @@ button:focus {
 @media (max-width: 390px) {
     .intro {
         &__img {
-            width: 320px;
+            width: 330px;
+            right: -100px;
         }
         &__inner {
-            padding: 20px 0 35px 0;
+            padding: 20px 0 60px 0;
         }
         &__block {
             margin-top: 15px;
         }
-        &__time {
-            &--m {
-                display: flex;
-                align-items: center;
-            }
-        }
-        &__clock {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-            svg {
-                width: 100%;
-                height: 100%;
-                display: block;
-            }
-        }
     }
     .title {
         &--intro {
-            font-size: 34px;
+            font-size: 30px;
+            line-height: 36px;
         }
     }
     .subtitle {
         &--intro {
-            width: 180px;
+            width: 225px;
         }
         &--time {
             width: 120px;
             font-size: 14px;
-            display: none;
-        }
-        &--how {
-            &__m {
-                width: 58%;
-            }
         }
     }
     .underline {
         &--intro {
             display: block;
             &::before {
-                top: 0;
-                right: 15px;
+                top: -5px;
+                left: -5px;
             }
         }
     }
@@ -1578,21 +1300,23 @@ button:focus {
             margin-top: 25px;
         }
     }
-    .course {
-        &__inner {
-            &--item {
-                padding: 40px 14px 10px 15px;
-            }
-        }
-    }
 }
 @media (max-width: 375px) {
-    .for {
-        &__inner {
-            padding: 50px 10px 35px 10px;
-            border-radius: 30px;
+    .title {
+        &--intro {
+            font-size: 25px;
+            line-height: 33px;
+        }
+    }
+    .program {
+        &__item {
             &::before {
-                border-radius: 30px;
+                top: 10px;
+                left: 10px;
+            }
+            &::after {
+                bottom: 10px;
+                right: 10px;
             }
         }
     }
